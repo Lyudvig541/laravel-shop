@@ -1,0 +1,681 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body  {
+    font-family: sans-serif, 'montserrat';
+}
+
+/*! General */
+
+section {
+  padding: 50px 0
+}
+
+/*! Navbar */
+.navbar a {
+    color: rgb(54, 54, 54);
+    margin-left: 23px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+
+    transition: ease-in-out 1s;
+  }
+
+  .navbar a:hover{
+    color: #1F7DAD;
+    font-weight: 900;
+  }
+  .navbar a span {
+    background-color: #1F7DAD;
+    padding: 10px 33px;
+    border-radius: 50px;
+    color: #fff;
+  }
+
+  /*! Main Page */
+
+  .float-r {
+    float: right;
+  }
+
+  /*! About Page */
+
+  .mission {
+    border-radius: 33px;
+    background-color: #dddd5d;
+    padding: 37px;
+  }
+
+  .vision {
+    border-radius: 33px;
+    background-color: blanchedalmond;
+    padding: 37px;
+  }
+
+  .abtus {
+    border-radius: 33px;
+    padding: 37px;
+    background-color: aliceblue;
+  }
+
+  /*! Categories */
+
+  #categories .mb-4 {
+    color: #fff;
+    background-color: #1F7DAD;
+    padding: 40px 33px;
+    border-radius: 50px;
+  }
+
+
+  .category-card {
+    padding-bottom: 33px
+}
+.category-card img{
+    border-radius: 250px;
+    max-width: 200px;
+    height: 200px
+}
+
+.category-card-img {
+    padding-bottom: 23px
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+  .category-row {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    border: 5px solid #FFFF00;
+    padding: 10px;
+}
+
+.container-fluid {
+  padding: 0 100px
+}
+
+.card {
+  border-radius: 20px;
+}
+
+/*! Products blade  */
+
+#products .pricing {
+  color: #1F7DAD;
+  font-weight: 700;
+  float: right;
+}
+
+#products .inline {
+  display: flex;
+  margin: 10px 23px
+}
+
+#products .inline h5 {
+  flex: 1
+}
+
+#products .card img {
+  padding: 23px;
+  height: 237px
+}
+
+#products .btn {
+  background-color: #1F7DAD;
+  color: #fff;
+  width: 123px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 23px
+}
+
+#products .btn:hover {
+  color: #fff;
+}
+
+#products .details,
+#products .brand {
+  padding: 0 23px ;
+  margin-top: -20px
+}
+
+#products .brand {
+  margin-bottom: -20px
+}
+
+#products .row {
+  padding-bottom: 33px;
+}
+
+#products select {
+  width: 300px;
+}
+
+.h-0 {
+    height: 0;
+}
+
+.h-1 {
+    height: 0.25rem;
+}
+
+.h-2 {
+    height: 0.5rem;
+}
+
+.h-3 {
+    height: 0.75rem;
+}
+
+.h-4 {
+    height: 1rem;
+}
+
+.h-5 {
+    height: 1.25rem;
+}
+
+.h-6 {
+    height: 1.5rem;
+}
+
+.h-8 {
+    height: 2rem;
+}
+
+.h-10 {
+    height: 2.5rem;
+}
+
+.h-12 {
+    height: 3rem;
+}
+
+.h-16 {
+    height: 4rem;
+}
+
+.h-20 {
+    height: 5rem;
+}
+
+.h-24 {
+    height: 6rem;
+}
+
+.h-32 {
+    height: 8rem;
+}
+
+.h-40 {
+    height: 10rem;
+}
+
+.h-48 {
+    height: 12rem;
+}
+
+.h-56 {
+    height: 14rem;
+}
+
+.h-64 {
+    height: 16rem;
+}
+
+.h-auto {
+    height: auto;
+}
+
+.h-px {
+    height: 1px;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.h-screen {
+    height: 100vh;
+}
+
+.text-xs {
+    font-size: 0.75rem;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+}
+
+.text-base {
+    font-size: 1rem;
+}
+
+.text-lg {
+    font-size: 1.125rem;
+}
+
+.text-xl {
+    font-size: 1.25rem;
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+}
+
+.text-3xl {
+    font-size: 1.875rem;
+}
+
+.text-4xl {
+    font-size: 2.25rem;
+}
+
+.text-5xl {
+    font-size: 3rem;
+}
+
+.text-6xl {
+    font-size: 4rem;
+}
+
+.leading-3 {
+    line-height: .75rem;
+}
+
+.leading-4 {
+    line-height: 1rem;
+}
+
+.leading-5 {
+    line-height: 1.25rem;
+}
+
+.leading-6 {
+    line-height: 1.5rem;
+}
+
+.leading-7 {
+    line-height: 1.75rem;
+}
+
+.leading-8 {
+    line-height: 2rem;
+}
+
+.leading-9 {
+    line-height: 2.25rem;
+}
+
+.leading-10 {
+    line-height: 2.5rem;
+}
+
+.leading-none {
+    line-height: 1;
+}
+
+.leading-tight {
+    line-height: 1.25;
+}
+
+.leading-snug {
+    line-height: 1.375;
+}
+
+.leading-normal {
+    line-height: 1.5;
+}
+
+.leading-relaxed {
+    line-height: 1.625;
+}
+
+.leading-loose {
+    line-height: 2;
+}
+
+.list-inside {
+    list-style-position: inside;
+}
+
+.list-outside {
+    list-style-position: outside;
+}
+
+.w-0 {
+    width: 0;
+}
+
+.w-1 {
+    width: 0.25rem;
+}
+
+.w-2 {
+    width: 0.5rem;
+}
+
+.w-3 {
+    width: 0.75rem;
+}
+
+.w-4 {
+    width: 1rem;
+}
+
+.w-5 {
+    width: 1.25rem;
+}
+
+.w-6 {
+    width: 1.5rem;
+}
+
+.w-8 {
+    width: 2rem;
+}
+
+.w-10 {
+    width: 2.5rem;
+}
+
+.w-12 {
+    width: 3rem;
+}
+
+.w-16 {
+    width: 4rem;
+}
+
+.w-20 {
+    width: 5rem;
+}
+
+.w-24 {
+    width: 6rem;
+}
+
+.w-32 {
+    width: 8rem;
+}
+
+.w-40 {
+    width: 10rem;
+}
+
+.w-48 {
+    width: 12rem;
+}
+
+.w-56 {
+    width: 14rem;
+}
+
+.w-64 {
+    width: 16rem;
+}
+
+.w-auto {
+    width: auto;
+}
+
+.w-px {
+    width: 1px;
+}
+
+.w-1\/2 {
+    width: 50%;
+}
+
+.w-1\/3 {
+    width: 33.333333%;
+}
+
+.w-2\/3 {
+    width: 66.666667%;
+}
+
+.w-1\/4 {
+    width: 25%;
+}
+
+.w-2\/4 {
+    width: 50%;
+}
+
+.w-3\/4 {
+    width: 75%;
+}
+
+.w-1\/5 {
+    width: 20%;
+}
+
+.w-2\/5 {
+    width: 40%;
+}
+
+.w-3\/5 {
+    width: 60%;
+}
+
+.w-4\/5 {
+    width: 80%;
+}
+
+.w-1\/6 {
+    width: 16.666667%;
+}
+
+.w-2\/6 {
+    width: 33.333333%;
+}
+
+.w-3\/6 {
+    width: 50%;
+}
+
+.w-4\/6 {
+    width: 66.666667%;
+}
+
+.w-5\/6 {
+    width: 83.333333%;
+}
+
+.w-1\/12 {
+    width: 8.333333%;
+}
+
+.w-2\/12 {
+    width: 16.666667%;
+}
+
+.w-3\/12 {
+    width: 25%;
+}
+
+.w-4\/12 {
+    width: 33.333333%;
+}
+
+.w-5\/12 {
+    width: 41.666667%;
+}
+
+.w-6\/12 {
+    width: 50%;
+}
+
+.w-7\/12 {
+    width: 58.333333%;
+}
+
+.w-8\/12 {
+    width: 66.666667%;
+}
+
+.w-9\/12 {
+    width: 75%;
+}
+
+.w-10\/12 {
+    width: 83.333333%;
+}
+
+.w-11\/12 {
+    width: 91.666667%;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.w-screen {
+    width: 100vw;
+}
+
+.z-0 {
+    z-index: 0;
+}
+
+.z-10 {
+    z-index: 10;
+}
+
+.z-20 {
+    z-index: 20;
+}
+
+.z-30 {
+    z-index: 30;
+}
+
+.z-40 {
+    z-index: 40;
+}
+
+.z-50 {
+    z-index: 50;
+}
+
+.z-auto {
+    z-index: auto;
+}
+
+.gap-0 {
+    grid-gap: 0;
+    gap: 0;
+}
+
+.gap-1 {
+    grid-gap: 0.25rem;
+    gap: 0.25rem;
+}
+
+.gap-2 {
+    grid-gap: 0.5rem;
+    gap: 0.5rem;
+}
+
+.gap-3 {
+    grid-gap: 0.75rem;
+    gap: 0.75rem;
+}
+
+.gap-4 {
+    grid-gap: 1rem;
+    gap: 1rem;
+}
+
+.gap-5 {
+    grid-gap: 1.25rem;
+    gap: 1.25rem;
+}
+
+.gap-6 {
+    grid-gap: 1.5rem;
+    gap: 1.5rem;
+}
+
+.gap-8 {
+    grid-gap: 2rem;
+    gap: 2rem;
+}
+
+.gap-10 {
+    grid-gap: 2.5rem;
+    gap: 2.5rem;
+}
+
+.gap-12 {
+    grid-gap: 3rem;
+    gap: 3rem;
+}
+
+.gap-16 {
+    grid-gap: 4rem;
+    gap: 4rem;
+}
+
+.gap-20 {
+    grid-gap: 5rem;
+    gap: 5rem;
+}
+
+.gap-24 {
+    grid-gap: 6rem;
+    gap: 6rem;
+}
+
+.gap-32 {
+    grid-gap: 8rem;
+    gap: 8rem;
+}
+
+.gap-40 {
+    grid-gap: 10rem;
+    gap: 10rem;
+}
+
+.gap-48 {
+    grid-gap: 12rem;
+    gap: 12rem;
+}
+
+.gap-56 {
+    grid-gap: 14rem;
+    gap: 14rem;
+}
+
+.gap-64 {
+    grid-gap: 16rem;
+    gap: 16rem;
+}
+
+.gap-px {
+    grid-gap: 1px;
+    gap: 1px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+.flex-shrink-0 {
+    flex-shrink: 0;
+}
+
+.flex-shrink {
+    flex-shrink: 1;
+}

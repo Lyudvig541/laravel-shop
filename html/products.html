@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <style>
+        .total {
+            position: absolute;
+
+            height: 89px;
+            bottom: 50px;
+        }
+
+        .dropdown {
+            width: 100%;
+            margin: 0 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.3);
+            font-family: 'Lato', sans-serif;
+        }
+        @media (min-width: 768px) {
+            .dropdown {
+                width: 600px;
+            }
+        }
+        .dropdown__switch:checked + .dropdown__options-filter .dropdown__select {
+            transform: scaleY(1);
+        }
+        .dropdown__switch:checked + .dropdown__options-filter .dropdown__filter:after {
+            transform: rotate(-135deg);
+        }
+        .dropdown__options-filter {
+            width: 100%;
+            cursor: pointer;
+        }
+        .dropdown__filter {
+            position: relative;
+            display: flex;
+            padding: 20px;
+            color: #595959;
+            background-color: #fff;
+            border: 1px solid #d6d6d6;
+            border-radius: 30px;
+            font-size: 14px;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+        .dropdown__filter:focus {
+            border: 1px solid #918ff4;
+            outline: none;
+            box-shadow: 0 0 5px 3px #918ff4;
+        }
+        .dropdown__filter::after {
+            position: absolute;
+            top: 45%;
+            right: 20px;
+            content: '';
+            width: 10px;
+            height: 10px;
+            border-right: 2px solid #595959;
+            border-bottom: 2px solid #595959;
+            transform: rotate(45deg) translateX(-45%);
+            transition: 0.2s ease-in-out;
+        }
+        .dropdown__select {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            margin-top: 5px;
+            overflow: hidden;
+            box-shadow: 0 5px 10px 0 rgba(152, 152, 152, 0.6);
+            transform: scaleY(0);
+            transform-origin: top;
+            font-weight: 300;
+            transition: 0.2s ease-in-out;
+        }
+        .dropdown__select-option {
+            padding: 20px;
+            background-color: #fff;
+            border-bottom: 1px solid #d6d6d6;
+            transition: 0.3s;
+        }
+        .dropdown__select-option:last-of-type {
+            border-bottom: 0;
+        }
+        .dropdown__select-option:hover {
+            background-color: #f9f9f9;
+        }
+ 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet">
+
+    <div class="dropdown">
+        <input type="checkbox" class="dropdown__switch" id="filter-switch" hidden />
+            <label for="filter-switch" class="dropdown__options-filter">
+                <ul class="dropdown__filter" role="listbox" tabindex="-1">
+                    <li class="dropdown__filter-selected" aria-selected="true">
+                        Default option
+                    </li>
+                    <li>
+                        <ul class="dropdown__select">
+                            <li class="dropdown__select-option" role="option">
+                                Option 1
+                            </li>
+                            <li class="dropdown__select-option" role="option">
+                                Option 2
+                            </li>
+                            <li class="dropdown__select-option" role="option">
+                                Option 3
+                            </li>
+                            <li class="dropdown__select-option" role="option">
+                                Option 4
+                            </li>
+                            <li class="dropdown__select-option" role="option">
+                                Option 5
+                            </li>
+                        </ul>
+                    </li>
+                </ul>			
+            </label>
+        </div>
+    </div>
+    <div class="container-fluid overflow-hidden">
+        <div class="row vh-100 overflow-auto">
+            <div class="col d-flex flex-column h-sm-100">
+                <main class="row overflow-auto">
+                    <div class="col-md-3">
+                        <div class="card">
+                            
+                        </div>
+                    </div>
+                </main>
+                <footer class="row bg-light py-4 mt-auto">
+                    <div class="col"> Footer content here... </div>
+                </footer>
+            </div>
+            <div class="col-12 col-sm-3 col-xl-2 px-sm-2 px-0 bg-dark d-flex sticky-top">
+                <div class="d-flex flex-sm-column flex-row flex-grow-1 align-items-center align-items-sm-start px-3 pt-2 text-white">
+                    <a href="/" class="d-flex align-items-center pb-sm-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <span class="fs-5">B<span class="d-none d-sm-inline">rand</span></span>
+                    </a>
+                    <ul class="nav nav-pills flex-sm-column flex-row flex-nowrap flex-shrink-1 flex-sm-grow-0 flex-grow-1 mb-sm-auto mb-0 justify-content-center align-items-center align-items-sm-start" id="menu">
+                        <li class="nav-item">
+                            <p>Category</p>
+                            <h5>Name</h5>
+                            <div class="inline">
+                                <h6> 23 </h6>
+                                <h5>200$</h5>
+                            </div>
+                        </li>
+                        
+                        <li class="total">
+                            <div class="ms-1 d-none d-sm-inline">Total: <span>200$</span></div>
+                        </li>
+                    </ul>
+                    <div class=" py-sm-4 mt-sm-auto ms-auto ms-sm-0 flex-shrink-1">
+                        <a href="https://google.com" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" aria-expanded="false">
+                            
+                            <span class="d-none d-sm-inline mx-1">Developed By Trithea</span>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    // Change option selected
+        const label = document.querySelector('.dropdown__filter-selected')
+        const options = Array.from(document.querySelectorAll('.dropdown__select-option'))
+
+        options.forEach((option) => {
+            option.addEventListener('click', () => {
+                label.textContent = option.textContent
+            })
+        })
+
+        // Close dropdown onclick outside
+        document.addEventListener('click', (e) => {
+            const toggle = document.querySelector('.dropdown__switch')
+            const element = e.target
+
+            if (element == toggle) return;
+
+            const isDropdownChild = element.closest('.dropdown__filter')		
+            
+            if (!isDropdownChild) {
+                toggle.checked = false
+            }
+        })
+    </script>
+</body>
+</html>
